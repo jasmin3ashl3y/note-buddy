@@ -3,6 +3,8 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+let noteList;
+let localNotes;
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -10,6 +12,15 @@ if (window.location.pathname === '/notes') {
   saveNoteBtn = document.querySelector('.save-note');
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
+}
+
+// delete an element
+const deleteLocalNote = (id) => {
+  localNotes.splice(id -1, 1);
+}
+
+const saveLocalNote = (note) => {
+  localNotes.push(note);
 }
 
 // Show an element
