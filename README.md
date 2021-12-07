@@ -1,4 +1,4 @@
-# Note Taker
+# Note Buddy Note Taker
 
 A simple note taking application.
 

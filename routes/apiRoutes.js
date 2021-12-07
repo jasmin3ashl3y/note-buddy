@@ -2,6 +2,7 @@ const notes = require('../db/db.json');
 const updateNotes = require('../updateNotes');
 const router = require('express').Router();
 
+console.log(notes);
 
 router.get('/notes', (req, res) => {
     res.status(200).json(notes)
