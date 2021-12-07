@@ -10,9 +10,9 @@ A simple note taking application that allows you to add, save, and delete notes.
 
 ## Screenshots
 
-![Add a new note](screenshot1.PNG)
+![Add a new note](/public/assets/images/screenshot1.PNG)
 
-![Save and delete note](screenshot2.PNG)
+![Save and delete note](/public/assets/images/screenshot2.PNG)
 
 ## Deployed Links
 
