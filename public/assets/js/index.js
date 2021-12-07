@@ -3,7 +3,7 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
-let localNotes;
+//let localNotes;
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -45,15 +45,15 @@ const getNotes = () =>
 
 const saveNote = (note) =>
   fetch('/api/notes', {
-    method: 'POST',
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify(note),
   });
 
 const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
+  fetch(`api/notes/${id}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
@@ -191,3 +191,4 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+renderActiveNote();
