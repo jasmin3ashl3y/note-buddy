@@ -16,5 +16,5 @@ A simple note taking application that allows you to add, save, and delete notes.
 
 ## Deployed Links
 
-
+https://note-buddy-note-taker.herokuapp.com/
 
